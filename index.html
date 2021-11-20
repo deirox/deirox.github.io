@@ -4,22 +4,31 @@
 
 <body>
 
-    <button onclick="jb()">HEN (8.50)</button>
+    <button onclick="try{poc()}catch(e){alert(e);}">HEN (8.50)</button>
+    <button onclick="jb2()">HEN (8.50)</button>
 
 </body>
 
-<script>
-    var homeURL = webkitURL.call;
-    var parentWindow = window.parent;
-    var myCacheStorage = self.caches;
-    var wind1 = window.Proxy.prototype
-    var btn = document.querySelector('button')
-    btn.innerHTML = `${window.clientInformation.appVersion}`
+<script type="text/javascript" src="just-rop.js"></script>
+<script type="text/javascript" src="gadgets.js"></script>
 
-    function jb() {
-        alert(`${window.clientInformation.appVersion}`);
-    }
-    console.log(window)
+<script>
+var chain = new rop();
+
+try {
+    chain.syscall("getpid", 20);
+    
+    // rax is the return value
+    chain.write_rax_ToVariable(0);
+    
+    chain.execute(function() {
+        console.log("PID: " + chain.getVariable(0).toString());
+    });
+}
+catch(e) {
+    logAdd("Incorrect gadget address " + e.toString(16));
+}
 </script>
+
 
 </html>
