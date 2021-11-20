@@ -11,10 +11,15 @@
 <script>
     var homeURL = webkitURL.call;
     var parentWindow = window.parent;
+    var myCacheStorage = self.caches;
+    var wind1 = window.Proxy.prototype
+    var btn = document.querySelector('button')
+        // btn.innerHTML = `${}`
 
     function jb() {
-        alert(`${parentWindow}`);
+        alert(`${window.clientInformation.appVersion}`);
     }
+    console.log(window)
 </script>
 
 </html>
