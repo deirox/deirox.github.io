@@ -4,7 +4,7 @@
 
 <body>
 
-    <button onclick="setTO()">HEN (8.50)</button>
+    <button onload="exploit()">HEN (8.50)</button>
 
 </body>
 
@@ -12,7 +12,8 @@
 <script type="text/javascript" src="gadgets.js"></script>
 
 <script>
-function setTO(){
+function exploit(){
+  var chain = new rop();
   setU8to(chain.data + 0, 0xeb);
   setU8to(chain.data + 1, 0xfe);
 
