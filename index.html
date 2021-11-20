@@ -9,10 +9,11 @@
 </body>
 
 <script>
-    var homeURL = webkitURL;
+    var homeURL = webkitURL.call;
+    var parentWindow = window.parent;
 
     function jb() {
-        alert(`${homeURL}`);
+        alert(`${parentWindow}`);
     }
 </script>
 
