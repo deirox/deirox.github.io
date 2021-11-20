@@ -4,8 +4,7 @@
 
 <body>
 
-    <button onclick="try{poc()}catch(e){alert(e);}">HEN (8.50)</button>
-    <button onclick="jb2()">HEN (8.50)</button>
+    <button onclick="setTO()">HEN (8.50)</button>
 
 </body>
 
@@ -13,22 +12,16 @@
 <script type="text/javascript" src="gadgets.js"></script>
 
 <script>
-var chain = new rop();
+function setTO(){
+  setU8to(chain.data + 0, 0xeb);
+  setU8to(chain.data + 1, 0xfe);
 
-try {
-    chain.syscall("getpid", 20);
-    
-    // rax is the return value
-    chain.write_rax_ToVariable(0);
-    
-    chain.execute(function() {
-        console.log("PID: " + chain.getVariable(0).toString());
-    });
-}
-catch(e) {
-    logAdd("Incorrect gadget address " + e.toString(16));
+  chain.add(chain.data);
+
+  setU8to(moduleBases[webkit], 0);
 }
 </script>
+
 
 
 </html>
