@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/deirox.github.io/static/css/main.b0082c8f.css",
+    "main.js": "/deirox.github.io/static/js/main.77edffdc.js",
+    "index.html": "/deirox.github.io/index.html",
+    "main.b0082c8f.css.map": "/deirox.github.io/static/css/main.b0082c8f.css.map",
+    "main.77edffdc.js.map": "/deirox.github.io/static/js/main.77edffdc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b0082c8f.css",
+    "static/js/main.77edffdc.js"
+  ]
+}
