@@ -1,6 +1,6 @@
 {
-  "short_name": "KEENGRAM",
-  "name": "Данное приложение KEENGRAM позволяет понять, что всё в ваших руках",
+  "short_name": "React App",
+  "name": "BOOKINGS",
   "icons": [
     {
       "src": "favicon.ico",
