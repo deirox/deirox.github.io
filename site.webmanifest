@@ -5,12 +5,20 @@
         {
             "src": "/android-chrome-192x192.png",
             "sizes": "192x192",
+<<<<<<< Updated upstream
             "type": "image/png"
+=======
+            "type": "img/png"
+>>>>>>> Stashed changes
         },
         {
             "src": "/android-chrome-512x512.png",
             "sizes": "512x512",
+<<<<<<< Updated upstream
             "type": "image/png"
+=======
+            "type": "img/png"
+>>>>>>> Stashed changes
         }
     ],
     "theme_color": "#000000",
