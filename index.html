@@ -37,8 +37,25 @@
     <title>KEENGRAM</title>
     <script type="module" crossorigin src="/assets/index-B8LUiq1r.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-t_K5qwZ0.css">
+    <script src="https://yastatic.net/s3/passport-sdk/autofill/v1/sdk-suggest-with-polyfills-latest.js"></script>
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      window.YaAuthSuggest.init(
+        {
+          client_id: "7f3129e3e4374a9394b60621fc8df9ea",
+          response_type: "token",
+          redirect_uri: "https://oauth.yandex.ru/verification_code"
+        },
+        "https://oauth.yandex.ru",
+        { view: "default" }
+      )
+      .then(({handler}) => handler())
+      .then(data => console.log('Сообщение с токеном', data))
+      .catch(error => console.log('Обработка ошибки', error))
+  
+    YaSendSuggestToken('https://deirox.github.io/')
+  </script>
   </body>
 </html>
