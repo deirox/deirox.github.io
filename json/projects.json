@@ -1,0 +1,15 @@
+[
+  {
+    "uid": "1",
+    "title": "Пэт-проект социальной сети KEENGRAM",
+    "media": [
+      {
+        "uid": "project-1.jpeg",
+        "type": "image",
+        "url": "/assets/sections/projects/project-1.jpeg"
+      }
+    ],
+    "description": "Данный проект социальной сети написан на технологии React.",
+    "url": "https://deirox.github.io/KEENGRAM/"
+  }
+]
