@@ -1,0 +1,62 @@
+[
+  {
+    "id": "socials",
+    "title": "Мои социальные сети",
+    "links": [
+      {
+        "id": "socials-0",
+        "title": "Телеграмм",
+        "link": "https://t.me/keenguydev",
+        "accent": "самый лучший способ связи"
+      },
+      {
+        "id": "socials-1",
+        "title": "Вконтакте",
+        "link": "https://vk.com/keenguy",
+        "accent": ""
+      }
+    ]
+  },
+  {
+    "id": "freelance",
+    "title": "Мои аккаунты на фриланс биржах",
+    "links": [
+      {
+        "id": "freelance-0",
+        "title": "Kwork",
+        "link": "https://kwork.ru/user/keenguy",
+        "accent": ""
+      },
+      {
+        "id": "freelance-1",
+        "title": "FL.ru",
+        "link": "https://www.fl.ru/users/deiron284/portfolio/",
+        "accent": ""
+      },
+      {
+        "id": "freelance-2",
+        "title": "freelancejob",
+        "link": "https://www.freelancejob.ru/users/keenguy/",
+        "accent": ""
+      }
+    ]
+  },
+  {
+    "id": "usefull_links",
+    "title": "Полезные ссылки",
+    "links": [
+      {
+        "id": "usefull_links-0",
+        "title": "Мой Github",
+        "link": "https://github.com/deirox",
+        "accent": ""
+      },
+      {
+        "id": "usefull_links-1",
+        "title": "Мой Gitflic",
+        "link": "https://gitflic.ru/user/keenguy",
+        "accent": ""
+      }
+    ]
+  }
+]
